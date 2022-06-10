@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEWISH CALANDER</title>
+
+</head>
+<style>
+    fieldset {
+        background-color: gold;
+        position: relative;
+        width: 50%;
+    }
+    
+    h1 {
+        color: rgb(20, 4, 4);
+        font-size: 400%;
+        font-weight: 900;
+    }
+    
+    tr,
+    td {
+        padding: 20px;
+        color: rgb(7, 6, 8);
+        font-size: 120%;
+        font-weight: 500;
+    }
+    
+    body {
+        background-color: #FFFFFF;
+        background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <h1> </h1>
+    <center>
+        <fieldset>
+            <h1>GOOD MORNING</h1>
+            <BR>
+            <BR>
+            <table>
+                <tr>
+                    <td>PRESENT DATE:</td>
+                    <td id="t1"></td>
+                </tr>
+                <tr>
+                    <td>PRESENT MONTH:</td>
+                    <td id="t2"></td>
+                </tr>
+                <tr>
+                    <td>YEAR:</td>
+                    <td id="t3"></td>
+                </tr>
+            </table>
+    </center>
+    </fieldset>
+    <script>
+        var inputdate = new Date().getDate();
+        console.log(inputdate);
+        var inputmonth = new Date().getMonth() + 1;
+        console.log(inputmonth);
+        var inputyear = prompt("Enter year");
+        console.log(inputyear);
+        document.getElementById("t1").innerText = inputdate;
+        document.getElementById("t2").innerText = inputmonth;
+        document.getElementById("t3").innerText = inputyear;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="FORM1.css">
+    <title></title>
+    <script src="ASSIGNMENT2" defer></script>
+
+</head>
+<style>
+        .heading {
+        text-align: center;
+        font-weight: 900;
+        font-size: 2rem;
+        color: white;
+    }
+    
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 15px 38px;
+        padding: 8px;
+        font-size: 17px;
+        background-color: gold;
+    }
+    
+    .f1 {
+        box-sizing: border-box;
+        background-color: #f2f2f2;
+        padding: 15px 20px 15px 20px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+    }
+    
+    fieldset {
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+    
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: GOLD;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: gold;
+    }
+    
+    input[type="reset"]:hover {
+        background-color: gold;
+    }
+    
+    @media only screen and (max-width: 591px) {
+        .heading {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+</style>
+
+<body>
+    <div class="heading">
+        <h1>JOSA CANDIDATE SEATS</h1>
+    </div>
+    <hr>
+    <div class="f1">
+        <form>
+            <p>JOSA CANDIDATE SEATS</p>
+            <p>NAME:<input type="text" id="name" placeholder="enter your full name" required></p>
+            <fieldset>
+                <legend>gender</legend>
+                <p>
+                    male <input type="radio" name="gender" id="male" required> female<input type="radio" name="gender" id="female" required> other<input type="radio" name="gender" id="other" required>
+                </p>
+            </fieldset>
+            <p>AGE:
+                <input type="number" id="age" required pattern=" placeholder=" enter your age " required min="1 "></p>
+          
+            <p>MOBILE NUMBER:<input type="tel " id="MOBILENO " required pattern="[0-9]{10} " maxlength="10 " minlength="10 " placeholder="enter 10 digit mobile number "></p>
+            <P>EMAIL ID:<input type="email " id="email " required placeholder="enter your email "></P>
+
+
+            <P>Preferred Branches:
+                <BR>
+                <input type="radio " id="1fse " name="v ">CSE <BR>
+                <input type="radio " id="both " name="v "> ELECTRICAL <BR>
+                <input type="radio " id="none " name="v "> CIVIL <BR>
+                <input type="radio " id="ALL " name="v "> MECHANICAL</P>
+            <p>UPLOAD YOUR JEE RESULT:<input type="file "></p>
+            <p>
+                <input type="reset " value="reset " id="reset ">
+                <input type="submit " value="submit " id="submit "></p>
+            <br>
+            <span id="result "></span>
+        </form>
+    </div>
+</body>
+
+</html>
